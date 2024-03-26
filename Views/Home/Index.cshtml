@@ -1,12 +1,11 @@
-﻿@using Mission11_TH.Models
-
+﻿
 @{
     ViewData["Title"] = "Home Page";
 }
 
 @model BookListViewModel
 
-    @foreach (var p in Model.Books)
+    @foreach (Book p in Model.Books)
     {
         <ul>
             <li>Title: @p.Title </li>
